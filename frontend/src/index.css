@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'OPTI Futura';
+  src: url('/fonts/OPTIFutura-ExtraBlackCond.otf');
+}
+
+@font-face {
+  font-family: 'Base Neue';
+  src: url('/fonts/BebasNeue-Regular.otf');
+}
+
+:root {
+  font-family: "Base Neue", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+
+  color-scheme: light dark;
+  color: rgba(0, 0, 0, 1);
+  background-color: #ffffff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+a {
+  font-weight: 500;
+  color: white;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #008000;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  min-width: 320px;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+h1 {
+  @apply text-6xl font-bold
+}
+
+h2 {
+  @apply text-4xl
+}
+
+h3 {
+  @apply text-2xl font-bold
+}
+
+h4 {
+  @apply text-xl
+}
+
+h5 {
+  @apply text-lg font-bold
+}
+
+.responsive {
+  @apply mx-auto w-full xl:max-w-6xl md:max-w-4xl sm:max-w-xl
+}
